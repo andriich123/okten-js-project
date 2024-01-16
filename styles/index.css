@@ -1,0 +1,28 @@
+/* index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати 
+під інформацією про user. */ 
+
+.users-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px
+}
+
+.user-content {
+  border: 1px solid #237b14;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.user-content__link {
+  display: block;
+  color: #2ac30f;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .users-list {
+    grid-template-columns: 1fr;
+  }
+}

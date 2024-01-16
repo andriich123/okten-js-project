@@ -1,0 +1,43 @@
+/* post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд. */
+
+.post-content {
+  margin: 20px;
+}
+
+.post-content > h1 {
+  padding: 0;
+  font-size: 1.5rem;
+  color: #237b14;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.comments-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.comment-item {
+  background-color: #eef8ed;
+  padding: 10px;
+}
+
+.comment-item__name, .comment-item__email {
+  color: #30b219;
+  padding: 3px;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .comments-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comments-list {
+    grid-template-columns: 1fr;
+  }
+}
